@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+.top{
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+}
+.top li{
+    padding:4px 10px 4px 0px;
+}
+.top a{
+    display: block;
+    text-decoration: none;
+}
+.top a:hover{
+    font-weight: bold;
+}
+.fb{
+    border-right: 1px gray solid;
+    padding-right: 10px;
+    color: #4460a0;
+}
+.twitter{
+    color: #00aaec;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header h1 a{
+    background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png");
+    width: 200px;
+    height: 50px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu a{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    color: #00cc99;
+    position: relative;
+    transition: all .3s;
+}
+.menu a:hover{
+    border-bottom: #00cc99 4px solid;
+}
+
+.menu ul{
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 3;
+    color: #00cc99;
+    text-align: center;
+}
+
+.menu ul a:hover{
+    border-bottom: 0;
+    color: white;
+    background-color: #00cc99;
+}
+
+.banner{
+    background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png");
+    height: 346px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner h2{
+    display: block;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    padding:35px 0 35px 80px;
+    font-weight: bold;
+    margin-top: 98px;
+}
+.banner-restaurant{
+    background: url("header_desktop@2x.png");
+    background-size: cover;
+    background-position: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.banner-content{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+.banner-content h2{
+  font-size: 36px;
+  padding: 40px 40px 10px;
+  margin-top: 98px;
+}
+.banner-content p{
+  padding-bottom: 30px;
+}
+.swiper{
+    height: 346px;
+}
+.content{
+     display: flex;
+     padding-top: 20px;
+}
+.content a{
+    text-decoration: none;
+    color: black;
+}
+.content li{
+    width: 300px;
+    margin: 16px;
+    border:1px outset gray;
+    border-top: 0;
+}
+.content li h2{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.content li p{
+    padding: 10px 10px 10px 20px;
+}
+h3{
+    padding-top: 30px;
+    width:100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+table{
+    width: 840px;
+    margin: 30px 80px 60px 80px;
+    border-collapse: collapse;
+}
+td, th {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+  }
+th{
+    background-color: #f7f7f7;
+}
+.highlight{
+    color: #44bea0;
+}
+form{
+    width:100%;
+    padding: 20px 0 0 0;
+    background:linear-gradient(#00644b,#009872);
+    height: 350px;
+}
+form h4{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+textarea{
+    float: left;
+    margin: 20px;
+    height: 250px;
+    width: 460px;
+}
+label{
+    color: white;
+}
+.data{
+   float: right;
+   margin: 20px 20px 20px 0;
+   font-size: 18px;
+}
+input{
+    display: block;
+    width: 460px;
+    height: 32px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.submit{
+    float: right;
+    width: 70px;
+    background-color: #00cc99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.submit:hover{
+    color: #00cc99;
+    background-color: white;
+    cursor: pointer;
+}
+.footer{
+    clear: both;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer a{
+    background-image: url("https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png");
+    width: 171px;
+    height: 36px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.footer ul li{
+    display: flex;
+    padding-bottom: 8px;
+}
+.footer p{
+    color: red;
+}
+.go-top {
+    position: fixed;
+    right: 40px;
+    bottom:10px
+}
+.go-top a{
+    display: block;
+    background-color: #00cc99;
+    color: #f6f6f6;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.go-top a:hover{
+    background-color:white;
+    color: #00cc99;
+    border: #00cc99 solid 1px;
+}
